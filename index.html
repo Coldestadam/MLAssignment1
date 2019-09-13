@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Image Classifier</title>
+    <script src="https://unpkg.com/@tensorflow/tfjs@1.2.8/dist/tf.min.js"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.4/dist/mobilenet.min.js"></script>
+  </head>
+
+  <body>
+  	<div class="intro">
+  		<h2>Welcome to Adam Villarreal's Image Classifier</h2>
+  	</div>
+
+  	<div class="upload section">
+        <input type="file" id="file" accept="image/*" onchange="loadFile(event)" style="display: none;"/>
+        <label class="upload-button" for="file">Click here to upload your image here</label>
+    </div>
+
+    <div class="section img-display">
+        <img id="img-output"/>
+    </div>
+
+    <div class="section submit">
+        <input type="submit" value="Classify This Image" id="classify"/>
+    </div>
+
+    <div id="answer"></div>
+
+    <script src="index.js"></script>
+  </body>
+
+</html>
